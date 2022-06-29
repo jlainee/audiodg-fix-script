@@ -10,7 +10,7 @@ while($true) {
         return
     }
     else {
-        Write-Host ("Couldn't find the right process. `nTrying again in (5s)... `n--------------------" -f $app)
+        Write-Host "Couldn't find the right process. `nTrying again in (5s)... `n--------------------"
         Start-Sleep -s 5
         $app = Get-Process ("{0}" -f $appName) -ErrorAction SilentlyContinue
     }
