@@ -1,4 +1,4 @@
-$appName = "Calculator"
+$appName = "audiodg"
 $app = Get-Process ("{0}" -f $appName) -ErrorAction SilentlyContinue
 
 while($true) {
