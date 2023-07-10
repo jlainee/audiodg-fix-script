@@ -9,7 +9,7 @@ Process priority set to High.
 
 Create a shortcut of the script and change its 'Target' to:  
 ```
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "C:\your-file-path\script.ps1"
+powershell.exe -ExecutionPolicy Bypass -File C:\your-file-path\script.ps1
 ```
 Press **WIN + R** to open Run command window and type **shell:startup**  
 Place the shortcut into your startup folder in order for it to run at startup.
